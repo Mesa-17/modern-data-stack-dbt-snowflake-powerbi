@@ -8,7 +8,7 @@ SELECT
 FROM
     {{ ref('orders_fact') }} OS
 JOIN
-    {{ ref('customers_stg') }} C ON OS.CustomerID = C.CustomerID
+    {{ ref('customer_stg') }} C ON OS.CustomerID = C.CustomerID
 GROUP BY
     OS.CustomerID,
     C.CustomerName
