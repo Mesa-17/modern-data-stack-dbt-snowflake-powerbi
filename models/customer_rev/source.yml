@@ -1,0 +1,17 @@
+sources:
+  - name: dbt_proj
+    database: SLEEKMART_OMS
+    schema: DBT_PROJECT
+
+    tables:
+      - name: customers
+        identifier: customers
+
+      - name: orders
+        identifier: orders
+
+      - name: orderitems
+        identifier: orderitems
+
+      - name: employees
+        identifier: employees
